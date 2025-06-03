@@ -178,18 +178,30 @@ padding-bottom: 48px;
 }
 
 /* List */
-.hero {}
+.hero {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: #fff;
+}
 
-.hero-list {}
+.hero-list {
+    display: flex;
+    gap: 24px;
+    
+}
 
-.hero-list-item {}
+.hero-list-item {
+    
+    width: calc((100% - 72px) / 4 );
+}
 
 .hero-list-subtitle {
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        color: #2e2f42;    
+        color: #2e2f42; 
+        margin-bottom: 8px;
 }
 
 .hero-list-text {
