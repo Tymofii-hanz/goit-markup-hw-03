@@ -26,6 +26,9 @@ button {
 address {
     font-style: normal;
 }
+img{
+    display: block;
+}
 
 /* common */
 
@@ -178,6 +181,11 @@ padding-bottom: 48px;
 }
 
 /* List */
+
+.visually-hidden{
+
+}
+
 .hero {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -257,9 +265,13 @@ padding-bottom: 48px;
 
 /* Portfolio */
 
-.portfolio {}
+.portfolio {
+    padding: 120px 0;
+
+}
 
 .portfolio-title {
+    margin-bottom: 72px;
     font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
@@ -269,13 +281,28 @@ padding-bottom: 48px;
         text-transform: capitalize;
 }
 
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    width: calc((100% - 48) / 3);
+}
 
 .portfolio-list-item {}
 
 .portfolio-list-images {}
 
+.portfolio-list-content{
+    padding: 32px 16px;
+        border: 1px solid #e7e9fc;
+        border-top: none;
+
+    
+}
+
 .portfolio-list-subtitle {
+    margin-bottom: 8px;
+   
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -294,9 +321,12 @@ padding-bottom: 48px;
 
         .footer {
             background: #2e2f42;
+            padding: 100px 0;
         }
     
         .footer-link {
+            display: inline-block;
+            margin-bottom: 16px;
             font-weight: 700;
                 font-size: 18px;
                 line-height: 1.17;
@@ -316,6 +346,7 @@ padding-bottom: 48px;
                 line-height: 1.5;
                 letter-spacing: 0.02em;
                 color: #f4f4fd;
+                max-width: 264px;
            }
 
 
