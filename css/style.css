@@ -5,8 +5,14 @@ body {
     
 }
 
-ul {
+ul,ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
 }
 
 a {
@@ -20,15 +26,32 @@ button {
 address {
     font-style: normal;
 }
-/* Header */
 
-.header {}
+/* common */
 
-.header-navigation {
-    
+.container{
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;  
 }
 
-.header-logo {
+/* Header */
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.logo{
     font-weight: 700;
         font-size: 18px;
         line-height: 1.17;
@@ -36,14 +59,24 @@ address {
         text-transform: uppercase;
         color: #4d5ae5;
         font-family: "Raleway", sans-serif;
-        
+
+}
+
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+    
 }
 
 .header-logo-span {
     color: #2e2f42;  
 }
 
-.header-menu-list {}
+.header-menu-list {
+display: flex;
+align-items: center;
+gap: 40px;
+}
 
 .header-menu-item {}
 
@@ -53,6 +86,8 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px;
+    display: block;
     
 }
 
@@ -64,18 +99,29 @@ address {
     color: #404bbf;
 }
 
-.header-address {}
+.header-address {
+    font-style: normal;
+    margin-left: auto;
+}
 
-.header-address-list {}
+.header-address-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
 
 .header-address-item {}
 
 .header-address-link {
+    display: block;
+    padding: 24px 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+
 }
 .header-address-link:hover{color: #404bbf;}
 
